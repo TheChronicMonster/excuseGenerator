@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Create an Excuse</title>
+		<meta charset="utf-8">
+		<link href='http://fonts.googleapis.com/css?family=Cabin:400,500,600,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<header>
+			<h1 id="easteregg">Create an Excuse</h1>
+		</header>
+		<div id="container">
+			<p id="excuse">Your Convenient Excuse</p>
+			<div id="categories">
+				<select id="adjective" required>
+					<option value="" disabled selected>Choose Your Adjective</option>
+					<option value="apocalyptic">Apocalyptic</option>
+					<option value="color">Color</option>
+					<option value="dark">Dark</option>
+					<option value="insulting">Insults</option>
+					<option value="noisy">Noisy</option>
+					<option value="praise">Praise</option>
+					<option value="scientific">Scientific</option>
+					<option value="shiny">Shiny</option>
+					<option value="whimsical">Whimsical</option>
+				</select>
+				<select id = "verb" required>
+					<option value = "" disabled selected>Choose Your Verb Tense</option>
+					<option value = "past">Past</option>
+				</select>
+				<select id="noun" required>
+					<option value="" disabled selected>Choose Your Noun</option>
+					<option value="animals">Animals</option>
+					<option value="everyday">Everyday</option>
+					<option value="fantasy">Fantasy</option>
+					<option value="gross">Gross</option>
+					<option value="horror">Horror</option>
+					<option value="jewelry">Jewelry</option>
+					<option value="music">Music</option>
+					<option value="places">Places</option>
+					<option value="profession">Professions</option>
+					<option value="scifi">Sci-Fi</option>
+				</select>
+			</div>
+			<div id="button">
+				<p>Generate Your Excuse</p>
+			</div>
+		</div><!-- End Container -->
+		<script src="excuseGenerator.js"></script>
+	</body>
+</html>

@@ -1,0 +1,119 @@
+body {
+	margin: 0;
+}
+
+#container {
+	width: 60%;
+	margin: 0 auto;
+}
+
+header {
+	border-top: 3px solid #0C4C9B;
+}
+
+
+/* --------- Generator--------- */
+
+#categories {
+	text-align: center;
+	margin: 150px auto 0;
+}
+
+select {
+	height: 2em;
+	width: 35%;
+	font-size: 1.5em;
+	font-family: 'Cabin', sans-serif;
+	border-radius: 5px;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+	border: 2px solid #222;
+	color: white;
+	background-color: #333;
+}
+
+select:focus {
+	outline: 0;
+	box-shadow: 0 1px 3px #000;
+
+}
+
+select:nth-child(1) {
+	margin-right: 5%;
+}
+
+.notSelected {
+	border: 1px solid #E81C07;
+	border-radius: 5px;
+	box-shadow: 0px 1px 8px #E81C07;
+	transition: border 0.3s ease-in-out;
+		-webkit-transition: border 0.3s ease-in;
+		-moz-transition: border 0.3s ease-in;
+		-ms-transition: border 0.3s ease-in;
+		-o-transition: border 0.3s ease-in;
+		transition: border 0.3s ease-in;
+	transition: box-shadow 0.3s ease-in;
+		-webkit-transition: box-shadow 0.3s ease-in-out;
+		-moz-transition: box-shadow 0.3s ease-in-out;
+		-ms-transition: box-shadow 0.3s ease-in-out;
+		-o-transition: box-shadow 0.3s ease-in-out;
+}
+
+#button {
+	background-color: #0C4C9B;
+	width: 75%;
+	margin: 50px auto;
+	padding: 5px 0;
+	line-height: 100%;
+	color: #fff;
+	vertical-align: middle;
+	text-align: center;
+	cursor: pointer;
+	transition: background 0.1s ease-in-out;
+	-webkit-transition: background 0.1s ease-in-out;
+	-moz-transition: background 0.1s ease-in-out;
+	-ms-transition: background 0.1s ease-in-out;
+	-o-transition: background 0.1s ease-in-out;
+	color: #fff;
+	border-radius: 50px;
+		-webkit-border-radius: 50px;
+		-moz-border-radius: 50px;
+	font-family: "Patua One";
+	font-size: 2em;
+}
+
+#button:hover {
+	background-color: #1272E7;
+	transition: background-color 0.3s ease-in-out;
+	-webkit-transition: background 0.3s ease-in-out;
+	-moz-transition: background 0.3s ease-in-out;
+	-ms-transition: background 0.3s ease-in-out;
+	-o-transition: background 0.3s ease-in-out;
+}
+
+#button:focus {
+	outline: 1px solid #E5052E;
+}
+
+
+/* --------- Text --------- */
+
+
+#name {
+	font-size: 6.5em;
+	text-align: center;
+	font-family: "Patua One";
+	color: #E81C07;
+	letter-spacing: .01em;
+}
+
+header h1 {
+	font-family: 'Cabin', sans-serif;
+	font-size: 1.25em;
+	color: #444;
+	margin-left: 20px;
+	cursor: pointer;
+}
+
+
+/* --------- Media Queries --------- */
