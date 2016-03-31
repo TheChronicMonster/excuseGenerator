@@ -9,7 +9,7 @@ var validate = function() {
 		adj.className = "notSelected";
 		return false;
 	} else {
-		var adj = document.getElementById("adjective");
+		adj = document.getElementById("adjective");
 		adj.className = "";
 	}
 	var verbs = document.getElementById("verb");
@@ -19,7 +19,7 @@ var validate = function() {
 		verb.className = "notSelected";
 		return false;
 	} else {
-		var verb = document.getElementById("verb");
+		verb = document.getElementById("verb");
 		verb.className = "";
 	}
 	var nouns = document.getElementById("noun");
@@ -29,9 +29,8 @@ var validate = function() {
 		noun.className = "notSelected";
 		return false;
 	} else {
-		var noun = document.getElementById("noun");
+		noun = document.getElementById("noun");
 		noun.className = "";
-	}
 	}
 	generator(selectedAdj, selectedVerb, selectedNoun);
 };
@@ -96,10 +95,10 @@ function getAdj(x){
 		case "scientific":
 			var scientific = ["scientific", "technical", "digital", "programming", "calculating", "formulating", "cyberpunk", "mechanical", "technological", 
 			"innovative", "brainy", "chemical", "quantum", "astro", "space", "theoretical", "atomic", "electronic", "gaseous", "investigative", "solar", 
-			"extinct", "galactic"]
+			"extinct", "galactic"];
 			return scientific;
 		}
-};
+}
 
 // Pulls noun out of array using random number sent from generator
 function getNoun(y) {
@@ -162,8 +161,8 @@ function getNoun(y) {
 			"quasar", "blackHole", "warpDrive", "laser", "orbit", "gears", "molecule", "electron", "neutrino", "proton", "experiment", "photon", "apparatus",
 			"universe", "gravity", "darkMatter", "constellation", "circuit", "asteroid"];
 			return scifi;
-		}; 
-};
+		}
+}
 
 // Pulls verb out of array using random number sent from generator
 function getVerb(z){
@@ -180,8 +179,8 @@ function getVerb(z){
 			"divorced", "drank", "eloped", "employed", "entertained", "escaped", "evacuated", "excused",
 			"expeled", "explored", "extolled", "faxed", "feared", "fenced", "fled"];
 			return past;
-		};
-};
+		}
+}
 
 // Generates random numbers for getAdj and getNoun functions and displays new name on webpage
 // name has been changed to excuse
@@ -193,9 +192,9 @@ function generator(adj, verb, noun) {
 	var randomNumber2 = parseInt(Math.random() * verbs.length);
 	var randomNumber3 = parseInt(Math.random() * nouns.length);
 	var randomNumber4 = parseInt(Math.random() * nouns.length);
-	var excuse = "My " + adjectives[randomNumber1].capitalize() + " " + nouns[randomNumber4].capitalize() + " " + verbs[randomNumber2].capitalize() + "my " + nouns[randomNumber3].capitalize() + ".";
+	var excuse = "My " + adjectives[randomNumber1].capitalize() + " " + nouns[randomNumber4].capitalize() + " " + verbs[randomNumber2].capitalize() + " my " + nouns[randomNumber3].capitalize() + ".";
 	document.getElementById('excuse').innerHTML=excuse;
-};
+}
 
 // Easter Egg function - chooses random adjective and random noun
 // randomName has been changed to randomExcuse
@@ -204,10 +203,11 @@ function randomExcuse() {
 	var verbs = ["past"];
 	var nouns = ["animals", "everyday", "fantasy", "gross", "horror", "jewelry", "places", "scifi"];
 	var randomNumberAdj = parseInt(Math.random() * adjectives.length);
+	var randomNumberVerb = parseInt(Math.random() * verbs.length);
 	var randomNumberNoun = parseInt(Math.random() * nouns.length);
 	generator(adjectives[randomNumberAdj], nouns[randomNumberNoun]);
 	console.log("%c" + document.getElementById("excuse").innerText, 'color: rgb(232, 28, 7); font-family: "Patua One"; letter-spacing: .01em; text-align: center; font-size: 6.5em;');
-};
+}
 
 document.getElementById("button").addEventListener("click", validate);
 document.getElementById("easteregg").addEventListener("click", randomExcuse);
