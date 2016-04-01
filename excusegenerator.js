@@ -9,7 +9,7 @@ var validate = function() {
 		adj.className = "notSelected";
 		return false;
 	} else {
-		adj = document.getElementById("adjective");
+		var adj = document.getElementById("adjective");
 		adj.className = "";
 	}
 	var verbs = document.getElementById("verb");
@@ -19,7 +19,7 @@ var validate = function() {
 		verb.className = "notSelected";
 		return false;
 	} else {
-		verb = document.getElementById("verb");
+		var verb = document.getElementById("verb");
 		verb.className = "";
 	}
 	var nouns = document.getElementById("noun");
@@ -29,7 +29,7 @@ var validate = function() {
 		noun.className = "notSelected";
 		return false;
 	} else {
-		noun = document.getElementById("noun");
+		var noun = document.getElementById("noun");
 		noun.className = "";
 	}
 	generator(selectedAdj, selectedVerb, selectedNoun);
@@ -179,6 +179,24 @@ function getVerb(z){
 			"divorced", "drank", "eloped", "employed", "entertained", "escaped", "evacuated", "excused",
 			"expeled", "explored", "extolled", "faxed", "feared", "fenced", "fled"];
 			return past;
+		case "present":
+			var present = ["is adding", "is admiring", "is advising", "is adopting", "is affirming",
+			"is alerting", "is allowing", "is amusing", "is announcing", "is annoying", "is arguing",
+			"is arranging", "is arresting", "is articulating", "is asking", "is attacking", "is attending",
+			"is avoiding", "is eating", "is avowing", "is baking", "is banning", "is bandaging", "is bartering",
+			"is bathing", "is bearing", "is befriending", "is believing", "is bending", "is biting",
+			"is bleaching", "is blinding", "is blinking", "is blotting", "is blowing", "is blushing",
+			"is cheating", "is choking", "is collecting", "is confessing", "is cooking", "is covering",
+			"is cracking", "is crossing", "is crying", "is damaging", "is declaring", "is delaying",
+			"is desiring", "is developing", "is digging", "is dividing", "is divorcing", "is drinking",
+			"is eloping", "is employing", "is entertaining", "is escaping", "is evacuating", "is excusing",
+			"is exploring the", "is extolling", "is faxing", "is fearing", "is fencing", "is fleeing"];
+			return present;
+		case "future":
+			var future = ["is going to accept", "is going to ache", "is going to add", "is going to admire",
+			"is going to advise", "is going to adopt", "is going to affirm", "is going to agree", "is going to alert",
+			"is going to allege", "is going to allow", "is going to allude", "is going to amuse"];
+			return future;
 		}
 }
 
@@ -200,7 +218,7 @@ function generator(adj, verb, noun) {
 // randomName has been changed to randomExcuse
 function randomExcuse() {
 	var adjectives = ["dark", "color", "whimsical", "shiny", "noise", "apocalyptic", "insulting", "praise", "scientific"];
-	var verbs = ["past"];
+	var verbs = ["past", "present", "future"];
 	var nouns = ["animals", "everyday", "fantasy", "gross", "horror", "jewelry", "places", "scifi"];
 	var randomNumberAdj = parseInt(Math.random() * adjectives.length);
 	var randomNumberVerb = parseInt(Math.random() * verbs.length);
