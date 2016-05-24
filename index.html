@@ -3,19 +3,23 @@
 	<head>
 		<title>Create an Excuse</title>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Create an Excuse">
+		<meta name="keywords" content="Create, Excuse, Generator">
+		<meta name="author" content="Skragglies.com">
 		<link href='http://fonts.googleapis.com/css?family=Cabin:400,500,600,700' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="styles.css">
 	</head>
 	<body>
-		<header>
-			<h1 id="easteregg">Create an Excuse</h1>
-		</header>
 		<div id="container">
-			<p id="excuse">Your Convenient Excuse</p>
+			<a href="http://www.skragglies.com/">
+				<img src="skragglies-logo.png" alt="Skragglies.com" style="display:block; margin: auto; width: 100%;">
+			</a>
+			<p id="excuse"></p>
 			<div id="categories">
 				<select id="adjective" required>
-					<option value="" disabled selected>Choose Your Adjective</option>
+					<option value="" disabled selected>Adjective</option>
 					<option value="apocalyptic">Apocalyptic</option>
 					<option value="color">Color</option>
 					<option value="dark">Dark</option>
@@ -27,13 +31,13 @@
 					<option value="whimsical">Whimsical</option>
 				</select>
 				<select id = "verb" required>
-					<option value = "" disabled selected>Choose Your Verb Tense</option>
+					<option value = "" disabled selected>Tense</option>
 					<option value = "past">Past</option>
 					<option value = "present">Present</option>
 					<option value = "future">Future</option>
 				</select>
 				<select id="noun" required>
-					<option value="" disabled selected>Choose Your Noun</option>
+					<option value="" disabled selected>Noun</option>
 					<option value="animals">Animals</option>
 					<option value="everyday">Everyday</option>
 					<option value="fantasy">Fantasy</option>
@@ -47,8 +51,10 @@
 				</select>
 			</div>
 			<div id="button">
-				<p>Generate Your Excuse</p>
+				<p>Create My Excuse</p>
 			</div>
+			<footer><a href="http://www.skragglies.com" style="text-align: center; display:block; margin: auto; width: 100%;">Entertainment provided by Skragglies.com</a>
+			</footer>
 		</div><!-- End Container -->
 		<script src="excuseGenerator.js"></script>
 	</body>
