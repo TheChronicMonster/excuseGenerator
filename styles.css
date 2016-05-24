@@ -7,42 +7,37 @@ body {
 	margin: 0 auto;
 }
 
-header {
-	border-top: 3px solid #0C4C9B;
-}
-
-
 /* --------- Generator--------- */
 
 #categories {
 	text-align: center;
-	margin: 150px auto 0;
+	margin: 15px auto 0;
 }
 
 select {
+	display: inline-block;
+	margin: 5px 25px;
 	height: 2em;
-	width: 35%;
-	font-size: 1.5em;
+	width: 60%;
+	font-size: 1.1em;
 	font-family: 'Cabin', sans-serif;
 	border-radius: 5px;
 		-webkit-border-radius: 5px;
 		-moz-border-radius: 5px;
 	border: 2px solid #222;
 	color: white;
-	background-color: #333;
+	background-color: hsla(214, 85%, 15%, 0.95);
+	text-align: center;
 }
 
 select:focus {
 	outline: 0;
 	box-shadow: 0 1px 3px #000;
-
-}
-
-select:nth-child(1) {
-	margin-right: 5%;
+	text-align: center;
 }
 
 .notSelected {
+	text-align: center;
 	border: 1px solid #E81C07;
 	border-radius: 5px;
 	box-shadow: 0px 1px 8px #E81C07;
@@ -60,7 +55,8 @@ select:nth-child(1) {
 }
 
 #button {
-	background-color: #0C4C9B;
+	display: block;
+	background-color: hsla(142, 85%, 62%, 0.95);
 	width: 75%;
 	margin: 50px auto;
 	padding: 5px 0;
@@ -75,15 +71,16 @@ select:nth-child(1) {
 	-ms-transition: background 0.1s ease-in-out;
 	-o-transition: background 0.1s ease-in-out;
 	color: #fff;
-	border-radius: 50px;
-		-webkit-border-radius: 50px;
-		-moz-border-radius: 50px;
+	border-radius: 30px;
+		-webkit-border-radius: 30px;
+		-moz-border-radius: 30px;
 	font-family: "Patua One";
 	font-size: 2em;
+	text-align: center;
 }
 
 #button:hover {
-	background-color: #1272E7;
+	background-color: hsla(146, 85%, 62%, 0.95);
 	transition: background-color 0.3s ease-in-out;
 	-webkit-transition: background 0.3s ease-in-out;
 	-moz-transition: background 0.3s ease-in-out;
@@ -92,12 +89,10 @@ select:nth-child(1) {
 }
 
 #button:focus {
-	outline: 1px solid #E5052E;
+	outline: 1px solid hsla(142, 85%, 62%, 0.95);
 }
 
-
 /* --------- Text --------- */
-
 
 #name {
 	font-size: 6.5em;
@@ -105,15 +100,14 @@ select:nth-child(1) {
 	font-family: "Patua One";
 	color: #E81C07;
 	letter-spacing: .01em;
+	text-align: center;
 }
 
-header h1 {
-	font-family: 'Cabin', sans-serif;
-	font-size: 1.25em;
-	color: #444;
-	margin-left: 20px;
-	cursor: pointer;
+#excuse {
+	font-size: 2.6em;
+	display: inline-block;
+	width: 100%;
+	text-align: center;
 }
-
 
 /* --------- Media Queries --------- */
